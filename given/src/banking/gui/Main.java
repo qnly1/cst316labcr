@@ -9,9 +9,8 @@ import javax.swing.JFrame;
  */
 final class Main {
 	
-	//messed this up on purpose
-	private Main() {
-	}
+	//let see if this is correct now
+	//i deleted the unnecessary constructor
 	
 	/**
 	 * All methods should have a Javadoc according to STYLE.
