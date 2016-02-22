@@ -18,7 +18,7 @@ public class Savings extends Account {
 	public boolean deposit(float amount) {
 		if (getState() != State.CLOSED && amount > 0.0f) {
 			balance = balance + amount - 0.50F;
-			if (balance > 0.0f) {
+			if (balance >= 0.0f) {
 				setState(State.OPEN);
 			}
 		}
@@ -36,7 +36,7 @@ public class Savings extends Account {
 			if (numWithdraws > 3)
 				balance = balance - 1.0f;
 			// KG BVA: should be < 0
-			if (balance <= 0.0f) {
+			if (balance < 0.0f) {
 				setState(State.OVERDRAWN);
 			}
 			return true;
