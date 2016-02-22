@@ -84,7 +84,12 @@ class ServerSolution implements AccountServer {
 		acc.setState(State.CLOSED);
 		return true;
 	}
-
+	
+	//Method: getAccount
+	//Inputs: String name
+	//Returns: Account
+	//Description: Returns an account with a given Account name as input
+	
 	public Account getAccount(String name) {
 		return accountMap.get(name);
 	}
